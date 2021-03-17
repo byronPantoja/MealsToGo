@@ -1,6 +1,6 @@
-import { StatusBar as ExportStatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StatusBar, StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StatusBar as ExportStatusBar } from "expo-status-bar";
+import React from "react";
+import { StatusBar, StyleSheet, Text, View, SafeAreaView } from "react-native";
 
 export default function App() {
   return (
@@ -21,17 +21,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7eae5',
+    backgroundColor: "#f7eae5",
   },
   search: {
-    backgroundColor: '#d6d6d6',
-    justifyContent: 'center',
+    backgroundColor: "#d6d6d6",
+    justifyContent: "center",
     padding: 20,
     marginTop: StatusBar.currentHeight,
   },
   list: {
     flex: 1,
-    backgroundColor: '#797979',
+    backgroundColor: "#797979",
     padding: 20,
   },
 });
