@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Platform } from 'react-native';
 
+const isAndroid = Platform.OS === 'android';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#d6d6d6',
     justifyContent: 'center',
     padding: 20,
+    marginTop: isAndroid ? 40 : 0,
   },
   list: {
     flex: 1,
