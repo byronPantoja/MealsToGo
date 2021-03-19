@@ -1,13 +1,21 @@
 import { StatusBar as ExportStatusBar } from "expo-status-bar";
 import React from "react";
 import { StatusBar, StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { Searchbar } from "react-native-paper";
 
 export default function App() {
+  const [searchQuery, setSearchQuery] = React.useState("");
+
+  const onChangeSearch = (query) => setSearchQuery(query);
   return (
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.search}>
-          <Text>Search</Text>
+          <Searchbar
+            placeholder="Search"
+            onChangeText={onChangeSearch}
+            value={searchQuery}
+          />
         </View>
         <View style={styles.list}>
           <Text>List</Text>
@@ -24,9 +32,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#f7eae5",
   },
   search: {
-    backgroundColor: "#d6d6d6",
+    backgroundColor: "#f7e9e4",
     justifyContent: "center",
-    padding: 20,
+    padding: 8,
     marginTop: StatusBar.currentHeight,
   },
   list: {
