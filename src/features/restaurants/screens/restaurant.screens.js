@@ -1,5 +1,4 @@
 import React from "react";
-
 import { StatusBar, StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { Searchbar } from "react-native-paper";
 
