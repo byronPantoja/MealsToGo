@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/native";
-// import { Text, View, StyleSheet } from "react-native";
+import { Text } from "react-native";
 import { Card } from "react-native-paper";
 
 const RestaurantCard = styled(Card)`
-  background-color: #f7e9e4;
+  background-color: #f7eae5;
 `;
 
 const RestaurantCardCover = styled(Card.Cover)`
@@ -12,7 +12,7 @@ const RestaurantCardCover = styled(Card.Cover)`
   padding: 20px;
 `;
 
-const RestaurantName = styled.Text`
+const RestaurantName = styled(Text)`
   padding-left: 21px;
   padding-bottom: 20px;
 `;
