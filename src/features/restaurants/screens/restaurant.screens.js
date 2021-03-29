@@ -7,19 +7,19 @@ import { RestaurantInfoCard } from "../components/restaurant-info.card.component
 
 const SafeArea = styled(SafeAreaView)`
   flex: 1;
-  background-color: #f7eae5;
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
+  background-color: ${(props) => props.theme.colors.bg.primary}
+    ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 
 const SearchContainer = styled(View)`
-  background-color: #f7e9e4;
-  padding: 8px;
+  background-color: ${(props) => props.theme.colors.bg.secondary}
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 const RestaurantListContainer = styled(View)`
   flex: 1;
-  background-color: #797979;
-  padding: 20px;
+  background-color: ${(props) => props.theme.colors.bg.primary};
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 export const RestaurantScreen = () => (
