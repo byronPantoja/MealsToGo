@@ -13,6 +13,7 @@ const RestaurantCardCover = styled(Card.Cover)`
 `;
 
 const RestaurantName = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.body}
   color: ${(props) => props.theme.colors.text.inverse};
   padding-left: ${(props) => props.theme.space[3]};
   padding-bottom: ${(props) => props.theme.space[3]};
